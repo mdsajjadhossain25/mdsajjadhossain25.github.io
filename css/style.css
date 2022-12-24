@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: lightblue;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -12,7 +14,8 @@ body{
     align-items: center;
     min-height: 100vh;
 }
-.container{
+
+.container {
     position: relative;
     margin: 50px;
     background: #fff;
@@ -22,24 +25,28 @@ body{
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-.left_side{
+
+.left_side {
     position: relative;
     background-color: #003147;
     padding: 40px;
 }
-.right_side{
+
+.right_side {
     background-color: #fff;
     position: relative;
     padding: 40px;
 }
-.profile_text{
+
+.profile_text {
     position: relative;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.imgBx{
+
+.imgBx {
     position: relative;
     width: 200px;
     height: 200px;
@@ -49,7 +56,8 @@ body{
     margin: auto;
 
 }
-.imgBx img{
+
+.imgBx img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -57,7 +65,8 @@ body{
     right: 0;
     object-fit: cover;
 }
-.profile_text h3{
+
+.profile_text h3 {
     color: #fff;
     font-size: 1.2em;
     margin-top: 20px;
@@ -66,12 +75,14 @@ body{
     line-height: 1.4em;
     text-align: center;
 }
-.profile_text h3 span{
+
+.profile_text h3 span {
     font-size: 0.8em;
     font-weight: 250;
 
 }
-.title{
+
+.title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
@@ -79,49 +90,72 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.contact_info ul{
+
+.contact_info ul {
     position: relative;
 }
-.contact_info ul li{
+
+.contact_info ul li {
     list-style: none;
     position: relative;
     margin: 10px 0px;
     cursor: pointer;
 }
-.contact_info ul li a{
+
+.contact_info ul li a {
     text-decoration: none;
     color: #fff;
 }
-.contact_info .icon{
+
+.contact_info .icon {
     display: inline-block;
     width: 20px;
     font-size: 18px;
     color: #03a9f4;
 }
-.contact_info span{
+
+.contact_info .icon:hover {
+    color: coral;
+}
+
+.contact_info .text:hover {
+    color: coral;
+}
+
+.contact_info .text a:hover {
+    color: coral;
+    text-decoration: underline;
+}
+
+.contact_info span {
     color: #fff;
     font-weight: 250;
 
 }
-.contact_info.education{
+
+.contact_info.education {
     margin-bottom: 10px;
 
 }
-.contact_info.education h5{
+
+.contact_info.education h5 {
     color: #03a9f4;
     font-weight: 500;
 
 }
-.contact_info.education h4{
+
+.contact_info.education h4 {
     color: #fff;
     font-weight: 250;
     font-size: 15px;
 }
-.contact_info.education h4:nth-child(2){
+
+.contact_info.education h4:nth-child(2) {
     color: #fff;
     font-weight: 450;
 }
-.language .percent{
+
+.language .percent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -129,49 +163,59 @@ body{
     display: block;
     margin-top: 5px;
 }
-.percent div{
+
+.percent div {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     background: #03a9f4;
 }
-.about{
+
+.about {
     margin-bottom: 50px;
 }
-.about :last-child{
+
+.about :last-child {
     margin-bottom: 0px;
 }
-.title2{
+
+.title2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-.about p{
+
+.about p {
     color: #333;
 }
-.about .box{
+
+.about .box {
     display: flex;
     flex-direction: none;
     margin: 20px 0px;
 }
-.year_company{
+
+.year_company {
     min-width: 150px;
 
 }
-.year_company h5{
+
+.year_company h5 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 500;
 
 }
-.text2 h4{
+
+.text2 h4 {
     text-transform: uppercase;
     font-size: 15px;
     color: #2ad7da;
 }
-.skill .box{
+
+.skill .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -179,60 +223,71 @@ body{
     justify-content: center;
     align-items: center;
 }
-.skill .box h4{
+
+.skill .box h4 {
     text-transform: uppercase;
     color: #848c99;
 }
-.persent2{
+
+.persent2 {
     position: relative;
     width: 100%;
     height: 10px;
     background: #f0f0f0;
 
 }
-.persent2 div{
+
+.persent2 div {
     position: absolute;
     height: 100%;
     left: 0;
     top: 0;
     background: #03a9f4;
 }
-.about.interest ul{
+
+.about.interest ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
 }
-.interest ul li{
+
+.interest ul li {
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px 0px;
 }
-.interest ul li .fa{
+
+.interest ul li .fa {
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
     margin-right: 2px;
 
 }
-@media (max-width:1000px){
-    .container{
+
+@media (max-width:1000px) {
+    .container {
         margin: 10px;
         grid-template-columns: repeat(1, 1fr);
 
     }
-    .about.interest ul{
+
+    .about.interest ul {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width:600px){
-    .about .box{
+
+@media (max-width:600px) {
+    .about .box {
         flex-direction: column;
     }
-    .skill .box{
+
+    .skill .box {
         grid-template-columns: repeat(1, 1fr);
     }
-    .about.interest ul{
+
+    .about.interest ul {
         grid-template-columns: repeat(1, 1fr);
     }
 }
